@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Test Survey Form</h1>
+            <p id="description">This is an example of a survey form</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group"><label id="name-label">Name</label>
+                <input id="name" type="text" class="form-sett" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group"><label id="email-label">Email</label>
+                <input type="email" class="form-sett" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group"><label id="number-label">Age</label>
+                <input type="number" class="form-sett" id="number" min="14" max="120" placeholder="Your age">
+            </div>
+
+            <div class="form-group">
+                <p>Your favorite pets</p>
+                <select id="dropdown" class="form-sett">
+                    <option>Cats</option>
+                    <option>Dogs</option>
+                    <option>Fish</option>
+                    <option>Hamsters</option>
+                    <option>Parrots</option>
+                    <option>Mice</option>
+                    <option>Reptiles</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you consider adopting an animal from a shelter?</p>
+                <label><input name="adopt" type="radio" value="yes" class="radio-input">Yes</label>
+                <label><input name="adopt" type="radio" value="no" class="radio-input">No</label>
+            </div>
+
+            <div class="form-group">
+                <p>What kind of pet would you like to adopt?</p>
+                <label><input value="Dog" type="checkbox" class="checkbox-input">Dog</label>
+                <label><input value="Cat" type="checkbox" class="checkbox-input">Cat</label>
+                <label><input value="Fish" type="checkbox" class="checkbox-input">Fish</label>
+                <label><input value="Hamster" type="checkbox" class="checkbox-input">Hamster</label>
+                <label><input value="Parrot" type="checkbox" class="checkbox-input">Parrot</label>
+                <label><input value="Mouse" type="checkbox" class="checkbox-input">Mouse</label>
+                <label><input value="Other" type="checkbox" class="checkbox-input">Other</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any additional questions or wishes?</p>
+                <textarea placeholder="Enter your question here" class="textarea-sett"></textarea>
+            </div>
+            <div class="form-group"><button type="submit" id="submit" class="submitbutton">Submit</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
